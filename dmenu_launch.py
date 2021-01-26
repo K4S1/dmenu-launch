@@ -96,7 +96,7 @@ def get_dmenu_theme(choise='Default'):
         dmenu_theme = theme(
                     font='Droid Sans Mono:Regular:size=10',
                     nb='#222222', nf='#EEEEEE', sb='#005577', sf='#EEEEEE',
-                  )                                    
+                  )
     return dmenu_theme
 
 def dmenu_setup(args):
@@ -167,7 +167,6 @@ def dmenu_setup(args):
     return dmenu
 
 def dmenu_input_blank(scheme, Prompt, Password=False):
-    
     args = ["-fn", scheme.font, \
             "-nb", scheme.nb, \
             "-nf", scheme.nf, \
@@ -299,7 +298,6 @@ def take_action(scheme, choice):
     if (scheme.target == "remote"):
         HostJSON = json.loads(open(format(choice), "r").read())
         BWJSON = bw_get_info(scheme,HostJSON['UserID'])
-        
         run_subprocess('ssvncviewer -scale autofit -passwd <(vncpasswd -f <<<"' + BWJSON['password'] + '") '+ HostJSON['host'] +' ')
 
 def run_subprocess(cmd):
