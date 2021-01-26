@@ -1,0 +1,1 @@
+https://www.youtube.com/results?page={startPage?}&utm_source=opensearch&search_query=[SEARCH]

@@ -1,0 +1,1 @@
+https://google.com/search?q=[SEARCH]&pws=0&safe=images&as_qdr=y&num=20
